@@ -1,0 +1,94 @@
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 12px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  background: #2a2a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #35354a;
+}
+
+
+.card.flipped {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+  color: white;
+  transform: rotateY(180deg);
+}
+.reset-wrapper {
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.home-button {
+  /*gap: 10px;*/
+  display: flex;
+}
+.start-button {
+  display: flex;
+  justify-self: center;
+
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 360px;
+  padding: 32px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 12px;
+}
