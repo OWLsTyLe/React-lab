@@ -6,7 +6,7 @@ import App from './App';
 
 createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
-    <BrowserRouter basename='/React-lab/'>
+    <BrowserRouter basename='/'>
       <App />
     </BrowserRouter>
   </Provider>
